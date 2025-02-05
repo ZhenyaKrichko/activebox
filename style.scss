@@ -17,6 +17,9 @@ $white: rgba(255, 255, 255, 1);
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    @media(max-width:1024px){
+        max-width: 998px;
+    }
     
     
 }
@@ -61,6 +64,9 @@ $white: rgba(255, 255, 255, 1);
         display: flex;
         justify-content: space-between;
         text-align: center;
+        @media(max-width:1024px){
+            justify-content: center;
+        }
     }
 
     &__line {
@@ -74,6 +80,10 @@ $white: rgba(255, 255, 255, 1);
         font-family: "Raleway", serif;
         color: $white;
         margin: 230px 0 31px;
+
+        @media(max-width:1024px){
+            max-width: 984px;
+        }
     }
 
     &__text {
@@ -114,6 +124,12 @@ $white: rgba(255, 255, 255, 1);
     display: flex;
     column-gap: 5px;
 
+    @media(max-width:1024px){
+    max-width:566px;
+     
+     
+}
+
     &__link {
         text-decoration: none;
         color: $white ;
@@ -123,6 +139,7 @@ $white: rgba(255, 255, 255, 1);
         font-family: "Raleway", serif;
         display: block;
         padding: 32px;
+        @media{}
 
          
 
