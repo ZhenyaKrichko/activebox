@@ -20,8 +20,10 @@ $white: rgba(255, 255, 255, 1);
     @media(max-width:1024px){
         max-width: 998px;
     }
-    
-    
+
+
+
+
 }
 
 .header {
@@ -43,30 +45,28 @@ $white: rgba(255, 255, 255, 1);
         height: 100%;
         background-color: rgba(37, 43, 73, 0.8);
     }
-    
-    &__logo-wrapper{
+
+    &__logo-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 183px;
-        max-height: 25px;
- 
+        
+
     }
 
     &__container {
         position: relative;
         z-index: 1;
 
-       
+
     }
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        @media(max-width:1024px){
-            justify-content: center;
-        }
+
+      
     }
 
     &__line {
@@ -81,9 +81,7 @@ $white: rgba(255, 255, 255, 1);
         color: $white;
         margin: 230px 0 31px;
 
-        @media(max-width:1024px){
-            max-width: 984px;
-        }
+      
     }
 
     &__text {
@@ -91,31 +89,33 @@ $white: rgba(255, 255, 255, 1);
         @include font(400, 24px, 28px);
         font-family: "Raleway", serif;
         color: $white;
-        margin-bottom: 79px;}
-    
+        margin-bottom: 79px;
+    }
+
 }
 
 .btn {
-        display: block;
-        max-width: 370px;
-        width: 100%;
-        background-color: rgba(255, 67, 67, 1);
-        margin: 0 auto ;
-        padding: 26px 10px;
-        text-transform: uppercase;
-        @include font(900, 24px, 28px);
-        font-family: "Raleway", serif;
-        color: $white;
-        border: none;
+    display: block;
+    max-width: 370px;
+    width: 100%;
+    background-color: rgba(255, 67, 67, 1);
+    margin: 0 auto;
+    padding: 26px 10px;
+    text-transform: uppercase;
+    @include font(900, 24px, 28px);
+    font-family: "Raleway", serif;
+    color: $white;
+    border: none;
 
-        &:hover{
-            background-color: rgba(231, 20, 20, 1);
-        }
-        &:active{
-            box-shadow: 4px 4px 30px 0 rgba(255, 67, 67, 1);
-
-        }
+    &:hover {
+        background-color: rgba(231, 20, 20, 1);
     }
+
+    &:active {
+        box-shadow: 4px 4px 30px 0 rgba(255, 67, 67, 1);
+
+    }
+}
 
 
 
@@ -124,11 +124,6 @@ $white: rgba(255, 255, 255, 1);
     display: flex;
     column-gap: 5px;
 
-    @media(max-width:1024px){
-    max-width:566px;
-     
-     
-}
 
     &__link {
         text-decoration: none;
@@ -138,10 +133,11 @@ $white: rgba(255, 255, 255, 1);
         @include font(700, 13px, 15px);
         font-family: "Raleway", serif;
         display: block;
-        padding: 32px;
-        @media{}
+        padding: 32px;}
 
-         
+       
+
+
 
         &:hover {
             display: block;
@@ -159,4 +155,25 @@ $white: rgba(255, 255, 255, 1);
 
 
     }
+
+
+.items{
+    padding: 116px 0 116px;
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 31px;
+    }
+
+    &__item{
+       width: 30%
+    }
+
+    &__wrapper-item{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
 }
+ 
