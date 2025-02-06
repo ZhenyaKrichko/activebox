@@ -131,6 +131,13 @@
   -moz-column-gap: 31px;
        column-gap: 31px;
 }
+@media (max-width: 768px) {
+  .items__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .items__item {
   width: 30%;
 }
