@@ -33,8 +33,9 @@
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
   border-bottom: 1px solid rgb(186, 187, 197);
+  z-index: 1;
 }
 
 .btn {
@@ -121,6 +122,10 @@
   color: rgb(255, 255, 255);
   margin: 0 auto 79px;
 }
+.Template__container {
+  z-index: 1;
+  position: relative;
+}
 
 .items {
   padding: 116px 0 116px;
@@ -155,6 +160,7 @@
   margin-bottom: 0 auto 29px;
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 .items__title {
   text-transform: uppercase;
@@ -171,4 +177,12 @@
   line-height: 21px;
   text-align: center;
   font-family: "Raleway", serif;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pictures__wrapper {
+  width: 25%;
 }/*# sourceMappingURL=style.css.map */

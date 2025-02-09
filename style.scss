@@ -42,6 +42,7 @@ $white: rgba(255, 255, 255, 1);
     &__logo {
         display: flex;
         width: 184px;
+        
     }
 
     &__container {
@@ -52,11 +53,13 @@ $white: rgba(255, 255, 255, 1);
     }
 
     &__wrapper {
+         
         display: flex;
         justify-content: space-between;
-        text-align: center;
-        border-bottom: 1px solid rgba(186, 187, 197, 1)
-        ;
+        align-items: center;
+        border-bottom: 1px solid rgba(186, 187, 197, 1);
+        z-index: 1;
+         
 
 
     }
@@ -161,6 +164,11 @@ $white: rgba(255, 255, 255, 1);
         margin:0 auto 79px;
         
 }
+    &__container{
+        z-index: 1;
+        position: relative;
+    }
+  
 }
 
 
@@ -198,6 +206,7 @@ $white: rgba(255, 255, 255, 1);
         margin-bottom:0 auto 29px;
         width: 100px;
         height: 100px;
+        margin: 0 auto;
 
     }
 
@@ -216,4 +225,14 @@ $white: rgba(255, 255, 255, 1);
         font-family: "Raleway", serif;
          
     }
-}  
+}
+
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+
+   &__wrapper{
+    width:25%;
+   } 
+    
+}
