@@ -45,14 +45,9 @@ $white: rgba(255, 255, 255, 1);
         
     }
 
-    &__container {
-        position: relative;
-        z-index: 1;
+    
 
-
-    }
-
-    &__wrapper {
+    &__wrappers {
          
         display: flex;
         justify-content: space-between;
@@ -131,13 +126,15 @@ $white: rgba(255, 255, 255, 1);
     background-attachment: fixed;
     background-position: center;
     padding: 230px 0 120px;
+    position: relative;
+     
     
-   
+    
 
     &::after {
         content: '';
         position: absolute;
-        display: block;
+        
         left: 0;
         top: 0;
         width: 100%;

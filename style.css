@@ -26,11 +26,7 @@
   display: flex;
   width: 184px;
 }
-.header__container {
-  position: relative;
-  z-index: 1;
-}
-.header__wrapper {
+.header__wrappers {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,11 +88,11 @@
   background-attachment: fixed;
   background-position: center;
   padding: 230px 0 120px;
+  position: relative;
 }
 .Template::after {
   content: "";
   position: absolute;
-  display: block;
   left: 0;
   top: 0;
   width: 100%;
