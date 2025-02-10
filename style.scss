@@ -18,16 +18,6 @@ $white: rgba(255, 255, 255, 1);
     max-width: 1210px;
     margin: 0 auto;
     padding: 0 20px;
-     
-
-
-    @media(max-width:1024px) {
-        max-width: 998px;
-    }
-
-
-
-
 }
 
 .header {
@@ -36,35 +26,24 @@ $white: rgba(255, 255, 255, 1);
     width: 100%;
     left: 0;
     top: 0;
-
-    
+    z-index: 1;
 
     &__logo {
         display: flex;
         width: 184px;
-        
+        align-items:center;
+
     }
 
-    
-
     &__wrappers {
-         
+
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid rgba(186, 187, 197, 1);
         z-index: 1;
-         
-
-
     }
-
-    
-
-   
-    }
-
-
+}
 
 .btn {
     display: block;
@@ -89,9 +68,6 @@ $white: rgba(255, 255, 255, 1);
     }
 }
 
-
-
-
 .nav {
     display: flex;
     column-gap: 5px;
@@ -110,7 +86,7 @@ $white: rgba(255, 255, 255, 1);
     }
 
     &:hover {
-         border-color: red;
+        border-color: red;
 
     }
 
@@ -119,7 +95,7 @@ $white: rgba(255, 255, 255, 1);
     }
 }
 
-.Template{
+.banner {
     background-image: url(fon1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,21 +103,21 @@ $white: rgba(255, 255, 255, 1);
     background-position: center;
     padding: 230px 0 120px;
     position: relative;
-     
-    
-    
+
+
+
 
     &::after {
         content: '';
         position: absolute;
-        
+
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         background-color: rgba(37, 43, 73, 0.8);
     }
-   
+
     &__title {
         text-align: center;
         text-transform: uppercase;
@@ -158,88 +134,90 @@ $white: rgba(255, 255, 255, 1);
         @include font(400, 24px, 28px);
         font-family: "Raleway", serif;
         color: $white;
-        margin:0 auto 79px;
-        
-}
-    &__container{
+        margin: 0 auto 79px;
+
+    }
+
+    &__container {
         z-index: 1;
         position: relative;
     }
-  
+
 }
 
 
-.items{
+.items {
     padding: 116px 0 116px;
 
-    &__container{
+    &__container {
         display: flex;
         flex-wrap: wrap;
         column-gap: 31px;
         row-gap: 88px;
 
 
-        @media(max-width:768px){
+        @media(max-width:768px) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
     }
 
-    &__item{
-       width: 100%;
-       max-width: 369px;
-       
-       @media(max-width:1024px){
-       max-width: 315px; 
-       }
-        
+    &__item {
+        width: 100%;
+        max-width: 369px;
+
+        @media(max-width:1024px) {
+            max-width: 315px;
+        }
+
     }
 
-    &__wrapper-icon{
+    &__wrapper-icon {
         display: flex;
         justify-content: center;
         align-self: center;
-        margin-bottom:0 auto 29px;
+        margin-bottom: 0 auto 29px;
         width: 100px;
         height: 100px;
         margin: 0 auto;
 
     }
 
-    &__title{
+    &__title {
         text-transform: uppercase;
         margin-bottom: 20px;
         text-align: center;
         font-family: "Raleway", serif;
-        @include font(900,24px ,28px );
-         
+        @include font(900, 24px, 28px);
+
 
     }
-    &__text{
-        @include font(400,18px,21px);
+
+    &__text {
+        @include font(400, 18px, 21px);
         text-align: center;
         font-family: "Raleway", serif;
-         
+
     }
 }
 
-.pictures{
+.pictures {
     display: flex;
     flex-wrap: wrap;
 
-   &__wrapper{
-    width:25%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    position: relative;
-   
-   } 
+    &__wrapper {
+        width: 25%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        position: relative;
 
-   &__pic{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    }
+
+    &__pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     &__content {
@@ -254,26 +232,26 @@ $white: rgba(255, 255, 255, 1);
         top: 0;
         background-color: rgba(255, 67, 67, 0.8);
         opacity: 0;
-    
-        &:hover{
+
+        &:hover {
             opacity: 1;
         }
-    
+
     }
-    
-    &__title{
-        @include font(900,24px ,28px );
+
+    &__title {
+        @include font(900, 24px, 28px);
         font-family: "Raleway", serif;
         text-align: center;
         margin-bottom: 20px;
         color: $white
     }
 
-    &__text{
+    &__text {
         @include font(400, 18px, 21px);
         font-family: "Raleway", serif;
         text-align: center;
         color: $white;
     }
-    
+
 }
