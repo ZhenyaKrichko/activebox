@@ -210,6 +210,11 @@ $white: rgba(255, 255, 255, 1);
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 
+    @media(max-width:768px){
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+
     &__wrapper {
          
         aspect-ratio: 1 / 1;
