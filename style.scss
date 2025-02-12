@@ -207,11 +207,11 @@ $white: rgba(255, 255, 255, 1);
 }
 
 .pictures {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 
     &__wrapper {
-        width: 25%;
+         
         aspect-ratio: 1 / 1;
         overflow: hidden;
         position: relative;
