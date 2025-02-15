@@ -54,11 +54,13 @@
   border-bottom: 3px solid transparent;
   text-align: center;
 }
-.nav:hover {
-  color: rgb(231, 20, 20);
+.nav__link:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(186, 187, 197);
 }
-.nav:active {
+.nav__link:active {
   color: rgb(231, 20, 20);
+  border-bottom: 3px solid rgb(231, 20, 20);
 }
 
 .banner {
