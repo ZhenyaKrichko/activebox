@@ -51,7 +51,7 @@ $white: rgba(255, 255, 255, 1);
     display: flex;
     column-gap: 5px;
 
-    @media (max-width:768px){
+    @media (max-width:768px) {
         display: none;
     }
 
@@ -67,22 +67,22 @@ $white: rgba(255, 255, 255, 1);
         padding: 32px 0;
         border-bottom: 3px solid transparent;
         text-align: center;
-   
+
         &:hover {
             color: $white;
-            border-bottom:3px solid rgba(186, 187, 197, 1);
-    
+            border-bottom: 3px solid rgba(186, 187, 197, 1);
+
         }
-    
+
         &:active {
-    
+
             color: rgba(231, 20, 20, 1);
             border-bottom: 3px solid rgba(231, 20, 20, 1);
-    
+
         }
     }
 
- 
+
 }
 
 .banner {
@@ -93,6 +93,7 @@ $white: rgba(255, 255, 255, 1);
     background-position: center;
     padding: 230px 0 120px;
     position: relative;
+    margin-bottom: 78px;
 
 
 
@@ -162,21 +163,21 @@ $white: rgba(255, 255, 255, 1);
 
 
 .items {
-    margin: 116px 0 116px;
+    margin-bottom: 80px;
 
     &__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-         
+
         column-gap: 31px;
         row-gap: 88px;
 
-        @media(max-width1024px){
+        @media(max-width1024px) {
             display: grid;
-        grid-template-columns: repeat(3, 1fr);
-         
-        column-gap: 20px;
-        row-gap: 88px;
+            grid-template-columns: repeat(3, 1fr);
+
+            column-gap: 20px;
+            row-gap: 88px;
         }
 
 
@@ -185,8 +186,8 @@ $white: rgba(255, 255, 255, 1);
             flex-direction: column;
             justify-content: center;
             align-items: center;
-             
-             
+
+
         }
     }
 
@@ -202,10 +203,10 @@ $white: rgba(255, 255, 255, 1);
         display: flex;
         justify-content: center;
         align-self: center;
-        margin-bottom: 0 auto 29px;
+        margin: 0 auto 23px;
         width: 100px;
         height: 100px;
-        margin: 0 auto;
+
 
     }
 
@@ -232,6 +233,7 @@ $white: rgba(255, 255, 255, 1);
     display: grid;
     grid-template-columns: repeat(4, 25%);
     gap: 2px;
+    margin-bottom: 78px;
 
     @media(max-width:768px) {
         display: grid;
@@ -302,6 +304,7 @@ $white: rgba(255, 255, 255, 1);
     &__container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        column-gap: 25px;
 
         @media(max-width:768px) {
             display: flex;
@@ -355,7 +358,7 @@ $white: rgba(255, 255, 255, 1);
 }
 
 .integer {
-    margin-top: 114px;
+     
     margin-bottom: 114px;
 }
 
@@ -386,21 +389,20 @@ $white: rgba(255, 255, 255, 1);
     &__text {
         width: 100%;
         max-width: 470px;
-       
+
         font-family: "Cardo", serif;
         font-weight: 400;
         font-size: 36px;
         line-height: 48px;
         font-style: italic;
         color: rgba(255, 255, 255, 1);
+        margin-bottom: 20px;
     }
 
     &__text-primary {
         width: 100%;
         max-width: 470px;
-        padding-bottom: 116px;
-        padding-right: 170px;
-        margin-left: 129px;
+       text-transform: uppercase;
         font-family: "Raleway", serif;
         font-weight: 700;
         font-size: 13px;
@@ -431,15 +433,16 @@ $white: rgba(255, 255, 255, 1);
     opacity: 1;
 }
 
-.integer__form {
+.integer__form{
     display: flex;
-    column-gap: 25px;
     justify-content: center;
-    margin-top: 31px;
+    column-gap: 25px;
+    margin-top: 24px;
 }
+ 
 
 .ready {
-    margin-top: 114px;
+     
     margin-bottom: 114px;
 
     &__title {
@@ -470,7 +473,7 @@ $white: rgba(255, 255, 255, 1);
         grid-template-columns: repeat(3, 1fr);
         padding: 71px 170px 71px;
 
-        @media (max-width:768px){
+        @media (max-width:768px) {
             display: flex;
             flex-direction: column;
             row-gap: 60px;
