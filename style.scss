@@ -204,7 +204,7 @@ $white: rgba(255, 255, 255, 1);
         row-gap: 88px;
 
         @media(max-width1024px) {
-             
+
             column-gap: 20px;
             row-gap: 49px;
         }
@@ -332,8 +332,8 @@ $white: rgba(255, 255, 255, 1);
         text-align: center;
         margin-bottom: 20px;
         color: $white;
-        
-        @media(max-width:1024px){
+
+        @media(max-width:1024px) {
             @include font(900, 18px, 21px);
 
         }
@@ -347,7 +347,7 @@ $white: rgba(255, 255, 255, 1);
         text-align: center;
         color: $white;
 
-        @media(max-width: 1024px){
+        @media(max-width: 1024px) {
             @include font(400, 14px, 16px);
         }
     }
@@ -355,7 +355,7 @@ $white: rgba(255, 255, 255, 1);
 }
 
 .fotos {
-    margin-top: 114px;
+
     margin-bottom: 114px;
 
     &__img-wrapper {
@@ -408,7 +408,7 @@ $white: rgba(255, 255, 255, 1);
             margin-bottom: 22px;
         }
 
-        @media(max-width:767px){
+        @media(max-width:767px) {
             margin-bottom: 38px;
         }
 
@@ -425,7 +425,7 @@ $white: rgba(255, 255, 255, 1);
             margin-bottom: 39px;
         }
 
-        @media(max-width:767px){
+        @media(max-width:767px) {
             margin-bottom: 55px;
         }
     }
@@ -434,14 +434,15 @@ $white: rgba(255, 255, 255, 1);
         display: flex;
         column-gap: 5px;
 
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             column-gap: 6px;
+            margin-bottom: 49px;
         }
 
 
     }
 
-    &__svg {
+    &__link {
         border: 1px solid rgba(198, 203, 205, 1);
         width: 39px;
         height: 39px;
@@ -449,12 +450,14 @@ $white: rgba(255, 255, 255, 1);
         justify-content: center;
         align-items: center;
 
+
+
         @media(max-width:1024px) {
             width: 32px;
             height: 32px;
         }
 
-        @media(max-width:767px){
+        @media(max-width:767px) {
             width: 39px;
             height: 39px;
         }
@@ -469,11 +472,12 @@ $white: rgba(255, 255, 255, 1);
     &__menu {
         display: grid;
         grid-template-columns: 49% 51%;
-    }
 
-    @media(max-width:768px) {
-        display: flex;
-        flex-direction: column;
+
+        @media(max-width:768px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__menu-img {
@@ -494,7 +498,6 @@ $white: rgba(255, 255, 255, 1);
     &__menu-text {
         width: 100%;
         max-width: 470px;
-
         font-family: "Cardo", serif;
         font-weight: 400;
         font-size: 36px;
@@ -502,6 +505,12 @@ $white: rgba(255, 255, 255, 1);
         font-style: italic;
         color: rgba(255, 255, 255, 1);
         margin-bottom: 20px;
+
+        @media (max-width:1024px) {
+            @include font(400, 24px, 32px);
+            margin-bottom: 30px;
+        }
+
     }
 
     &__menu-text-primary {
@@ -513,6 +522,11 @@ $white: rgba(255, 255, 255, 1);
         font-size: 13px;
         line-height: 15px;
         color: rgba(255, 255, 255, 1);
+
+        @media(max-width:1024px) {
+            @include font(400, 12px, 14px);
+            padding-bottom: 95px;
+        }
     }
 }
 
@@ -537,7 +551,7 @@ $white: rgba(255, 255, 255, 1);
 .integer__radio:checked+.integer__label .integer__circle svg {
     opacity: 1;
 }
- 
+
 
 
 .ready {
@@ -550,20 +564,28 @@ $white: rgba(255, 255, 255, 1);
         font-family: "Raleway", serif;
         color: rgba(0, 0, 0, 1);
         margin-bottom: 5px;
+
+        @media(max-width:1024px) {
+            @include font(500, 24px, 28px);
+        }
     }
 
     &__text {
         text-align: center;
-        @include font(700, 18px, 21px);
+        @include font(700, 24px, 21px);
         font-family: "Raleway", serif;
         color: rgba(0, 0, 0, 1);
         margin-bottom: 47px;
+
+        @media(max-width: 1024px) {
+            @include font(700, 14px, 16px);
+        }
     }
 }
 
 .footer {
-    
-    padding-bottom: 24px;
+
+
 
     &__top {
         background-color: rgba(53, 60, 101, 1);
@@ -592,6 +614,11 @@ $white: rgba(255, 255, 255, 1);
         @include font(700, 18px, 21px);
         text-transform: uppercase;
         margin-bottom: 29px;
+
+        @media(max-width:1024px) {
+            @include font(700, 14px, 16px);
+
+        }
     }
 
     &__text {
@@ -599,6 +626,10 @@ $white: rgba(255, 255, 255, 1);
         text-align: center;
         font-family: "Raleway", serif;
         @include font(400, 18px, 21px);
+
+        @media(max-width:1024px) {
+            @include font(400, 14px, 16px);
+        }
     }
 
     &__social-media {
@@ -609,11 +640,17 @@ $white: rgba(255, 255, 255, 1);
 
     &__link {
         border: 1px solid rgba(198, 203, 205, 1);
-        width: 31px;
-        height: 31px;
+        width: 39px;
+        height: 39px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media(max-width:1024px){
+            width: 33px;
+            height: 33px;
+
+        }
     }
 
     &__bottom {
@@ -621,16 +658,24 @@ $white: rgba(255, 255, 255, 1);
         padding: 23px 0 24px;
     }
 
-    &__bottom-container{
+    &__bottom-container {
         margin: 0 auto;
+        max-width: 370px;
+        padding: 0 20px;
+
+
     }
-    
+
 
     &__copyright {
         color: rgba(108, 114, 121, 1);
         text-align: center;
         font-family: "Raleway", serif;
         @include font(400, 18px, 21px);
+
+        @media(max-width: 1024px){
+            @include font(400, 14px, 16px);
+        }
 
 
     }
