@@ -291,12 +291,13 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin-bottom: 39px;
 }
 .fotos__icons {
   display: flex;
-  margin-top: 37px;
   -moz-column-gap: 6px;
        column-gap: 6px;
+  margin-top: auto;
 }
 .fotos__svg {
   border: 1px solid rgb(198, 203, 205);
@@ -427,6 +428,7 @@
   .footer__content {
     display: flex;
     flex-direction: column;
+    row-gap: 60px;
   }
 }
 .footer__title {

@@ -186,6 +186,7 @@ $white: rgba(255, 255, 255, 1);
             justify-content: center;
             align-items: center;
              
+             
         }
     }
 
@@ -333,13 +334,14 @@ $white: rgba(255, 255, 255, 1);
     &__text {
         color: rgba(108, 114, 121, 1);
         font-family: "Raleway", serif;
-        @include font(400, 18px, 21px)
+        @include font(400, 18px, 21px);
+        margin-bottom: 39px;
     }
 
     &__icons {
         display: flex;
-        margin-top: 37px;
-        column-gap: 6px
+        column-gap: 6px;
+        margin-top: auto;
     }
 
     &__svg {
@@ -471,6 +473,7 @@ $white: rgba(255, 255, 255, 1);
         @media (max-width:768px){
             display: flex;
             flex-direction: column;
+            row-gap: 60px;
         }
 
     }
