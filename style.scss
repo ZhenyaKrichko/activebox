@@ -32,6 +32,8 @@ $white: rgba(255, 255, 255, 1);
         display: flex;
         width: 184px;
         align-items: center;
+        padding-top: 20px;
+        padding-right: 8px;
 
     }
 
@@ -50,6 +52,7 @@ $white: rgba(255, 255, 255, 1);
 .nav {
     display: flex;
     column-gap: 5px;
+    padding-top: 13px;
 
     @media (max-width:768px) {
         display: none;
@@ -67,8 +70,9 @@ $white: rgba(255, 255, 255, 1);
         padding: 32px 0;
         border-bottom: 3px solid transparent;
         text-align: center;
+        transition: all 0.5s;
 
-        &:hover {
+         &:hover {
             color: $white;
             border-bottom: 3px solid rgba(186, 187, 197, 1);
 
@@ -114,6 +118,9 @@ $white: rgba(255, 255, 255, 1);
         background-color: rgba(37, 43, 73, 0.8);
     }
 
+
+
+
     &__title {
         text-align: center;
         text-transform: uppercase;
@@ -121,6 +128,7 @@ $white: rgba(255, 255, 255, 1);
         font-family: "Raleway", serif;
         color: $white;
         margin-bottom: 31px;
+
 
         @media (max-width:1024px) {
             @include font(900, 48px, 56px);
@@ -158,8 +166,9 @@ $white: rgba(255, 255, 255, 1);
         z-index: 1;
         position: relative;
     }
-
 }
+
+
 
 .btn {
     display: block;
@@ -173,6 +182,7 @@ $white: rgba(255, 255, 255, 1);
     font-family: "Raleway", serif;
     color: $white;
     border: none;
+    transition: all 0.5s;
 
     &:hover {
         background-color: rgba(231, 20, 20, 1);
@@ -199,9 +209,9 @@ $white: rgba(255, 255, 255, 1);
     &__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
+        row-gap: 131px;
         column-gap: 31px;
-        row-gap: 88px;
+        padding-top: 36px;
 
         @media(max-width1024px) {
 
@@ -233,6 +243,7 @@ $white: rgba(255, 255, 255, 1);
         margin: 0 auto 29px;
         width: 100px;
         height: 100px;
+        margin-bottom: 46px;
 
 
         @media(max-width:1024px) {
@@ -256,6 +267,7 @@ $white: rgba(255, 255, 255, 1);
         text-align: center;
         font-family: "Raleway", serif;
         @include font(900, 24px, 28px);
+
 
         @media(max-width:1024px) {
             @include font(900, 18px, 21px);
@@ -286,6 +298,8 @@ $white: rgba(255, 255, 255, 1);
     grid-template-columns: repeat(4, 25%);
     gap: 2px;
     margin-bottom: 78px;
+    padding-top: 73px;
+    margin-bottom: 29px;
 
     @media(max-width:767px) {
         display: grid;
@@ -530,28 +544,7 @@ $white: rgba(255, 255, 255, 1);
     }
 }
 
-.integer__radio {
-    display: none;
-}
-
-.integer__circle {
-    width: 14px;
-    height: 14px;
-    border: 1px solid rgba(126, 93, 111, 1);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.integer__circle svg {
-    opacity: 0;
-}
-
-.integer__radio:checked+.integer__label .integer__circle svg {
-    opacity: 1;
-}
-
+ 
 
 
 .ready {
@@ -646,7 +639,7 @@ $white: rgba(255, 255, 255, 1);
         justify-content: center;
         align-items: center;
 
-        @media(max-width:1024px){
+        @media(max-width:1024px) {
             width: 33px;
             height: 33px;
 
@@ -673,7 +666,7 @@ $white: rgba(255, 255, 255, 1);
         font-family: "Raleway", serif;
         @include font(400, 18px, 21px);
 
-        @media(max-width: 1024px){
+        @media(max-width: 1024px) {
             @include font(400, 14px, 16px);
         }
 
